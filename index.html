@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись к психологу</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Записаться на консультацию</h1>
+    <form id="bookingForm">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" required><br><br>
+        
+        <label for="phone">Ваш телефон:</label><br>
+        <input type="tel" id="phone" required><br><br>
+        
+        <label for="date">Дата консультации:</label><br>
+        <input type="date" id="date" required><br><br>
+        
+        <button type="submit">Отправить заявку</button>
+    </form>
+    
+    <div id="result"></div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
